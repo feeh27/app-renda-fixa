@@ -7,7 +7,8 @@ Desenvolvido com Angular 8.2.* e MDBootstrap 8.1.*
 ## Requisitos
 
   * GIT
-  * Node
+  * Node + Npm
+  * Docker
 
 Instale os programas acima listados. 
 
@@ -30,9 +31,16 @@ npm install
 
 ### Inicie o servidor e verifique se está tudo funcionando
 
+**Iniciando o servidor localmente:**
 ```bash
-ng serve --open
+ng serve --host 0.0.0.0 --port 80 --open
 ```
+
+**Iniciando o servidor localmente com docker:**
+```bash
+docker-compose up -d --build
+```
+**Obs:** Utilizar esse comando no diretório do arquivo `docker-compose.yml`.
 
 #### Resultado esperado
 
