@@ -1,13 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import br from '@angular/common/locales/br';
+import es from '@angular/common/locales/es';
+
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { FundCardComponent } from './fund-card/fund-card.component';
+
+registerLocaleData(br, 'pt');
+registerLocaleData(es, 'es');
 
 @NgModule({
   declarations: [
     AppComponent,
+    FundCardComponent,
   ],
   imports: [
     BrowserModule,
