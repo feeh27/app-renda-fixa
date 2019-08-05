@@ -1,0 +1,9 @@
+﻿version: '3.5' # We use version 3.5 syntax
+services: # Here we define our service(s)
+    front-app-renda-fixa-service: # The name of the service
+      container_name: front-app-renda-fixa  # Container name
+      build: ./angular # Location of our Dockerfile
+      volumes: # Volume binding
+        - './app:/usr/src/app'
+      ports: 
+        - '80:80' # Port mapping
