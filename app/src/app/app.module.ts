@@ -9,6 +9,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FundCardComponent } from './fund-card/fund-card.component';
+import { FundsComponent } from './funds/funds.component';
 
 registerLocaleData(br, 'pt');
 registerLocaleData(es, 'es');
@@ -17,6 +18,7 @@ registerLocaleData(es, 'es');
   declarations: [
     AppComponent,
     FundCardComponent,
+    FundsComponent,
   ],
   imports: [
     BrowserModule,
