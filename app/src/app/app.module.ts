@@ -12,18 +12,15 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FundCardComponent } from './fund-card/fund-card.component';
+import { FundDetailComponent } from './fund-detail/fund-detail.component';
 import { FundsComponent } from './funds/funds.component';
+import { FundCardComponent } from './fund-card/fund-card.component';
+import { ClearCnpj } from './clear-cnpj.pipe';
 
 registerLocaleData(br, 'pt');
 registerLocaleData(es, 'es');
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FundCardComponent,
-    FundsComponent,
-  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -34,10 +31,17 @@ registerLocaleData(es, 'es');
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
     HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataService, { dataEncapsulation: false }
+      InMemoryDataService, { dataEncapsulation: false },
     ),
   ],
+  declarations: [
+    AppComponent,
+    FundDetailComponent,
+    FundsComponent,
+    FundCardComponent,
+    ClearCnpj,
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

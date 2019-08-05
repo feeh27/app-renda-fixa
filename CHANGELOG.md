@@ -1,5 +1,13 @@
 # Change Log
 
+## 0.6.0 - 05/08/2019
+
+* Feature: Adicionado componente FundDetail 
+* Feature: Adicionado classe FundDetail
+* Feature: Adicionado serviço FundDetail
+* Feature: Adicionado rotas do app
+* Feature: Adicionado PIPE para tratamento de CNPJ
+
 ## 0.5.0 - 05/08/2019
 
 * Feature: Padronização de comunicação com API's utilizando json
