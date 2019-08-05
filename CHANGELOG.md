@@ -1,8 +1,12 @@
 # Change Log
 
+## 0.4.0 - 05/08/2019
+
+* Feature: Serviço fund
+
 ## 0.3.0 - 05/08/2019
 
-* Feature: 
+* Feature: Componentização de funds
 
 ## 0.2.0 - 05/08/2019
 
