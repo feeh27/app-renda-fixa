@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Fund } from '../fund';
-import { FundService} from '../fund.service';
+import { FundService } from '../fund.service';
 
 @Component({
   selector: 'app-funds',
@@ -9,6 +9,7 @@ import { FundService} from '../fund.service';
   styleUrls: ['./funds.component.scss']
 })
 export class FundsComponent implements OnInit {
+
   funds: Fund[];
 
   constructor(
@@ -20,7 +21,8 @@ export class FundsComponent implements OnInit {
   }
 
   getFunds(): void {
-    this.funds = this.fundService.getFunds();
+    this.fundService.getFunds()
+      .subscribe(funds => this.funds = funds);
   }
 
 }
