@@ -1,4 +1,4 @@
-<div class="my-3" *ngIf="fund">
+<div class="my-3" *ngIf="fund" routerLink="/fund-detail/{{fund.cnpj | clearCnpj }}">
   <!--Card-->
   <mdb-card>
     <mdb-card-header [ngClass]="fund.perfil">

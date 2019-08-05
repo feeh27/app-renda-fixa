@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="my-3 mx-auto col-3" *ngIf="fundDetail">
+    <!--Card-->
+    <mdb-card>
+      <mdb-card-header>
+        Detalhes do Fundo de Renda Fixa
+      </mdb-card-header>
+      <!--Card content-->
+      <mdb-card-body>
+        <mdb-card-title>
+          <h6 class="font-weight-bold">CNPJ: {{ fundDetail.cnpj }}</h6>
+        </mdb-card-title>
+        <mdb-card-text>
+          {{ fundDetail.descricao }}
+        </mdb-card-text>
+      </mdb-card-body>
+      <!--/.Card content-->
+    </mdb-card>
+    <!--/.Card-->
+  </div>
+</div>
+<div class="text-center">
+  <a mdbBtn floating="true" size="lg" color="info" mdbWavesEffect (click)="goBack()">
+    <mdb-icon fas icon="reply"></mdb-icon> Voltar
+  </a>
+</div>
