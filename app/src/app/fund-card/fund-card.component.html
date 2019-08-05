@@ -1,0 +1,38 @@
+<div class="my-3" *ngIf="fund">
+  <!--Card-->
+  <mdb-card>
+    <mdb-card-header [ngClass]="fund.perfil">
+      Fundo de Renda Fixa
+    </mdb-card-header>
+    <!--Card content-->
+    <mdb-card-body [ngClass]="'pb-2'">
+      <mdb-card-title>
+        <h6 class="mb-4 font-weight-bold">{{ fund.gestor | uppercase }}</h6>
+      </mdb-card-title>
+
+      <small>CNPJ: {{ fund.cnpj }}</small>
+    </mdb-card-body>
+    <hr class="my-0">
+    <mdb-card-body [ngClass]="'py-0 pt-2'">
+      <div class="float-left">
+        <small>Valor mínimo</small>
+        <div class="black-text">R$ {{ fund.aplicacao_minima | number: '1.2-2':'es'}}</div>
+      </div>
+      <div class="float-right">
+        <small>Liquidez</small>
+        <div class="black-text font-weight-bold">{{ fund.liquidez }}</div>
+      </div>
+    </mdb-card-body>
+    <!--/.Card content-->
+    <mdb-card-footer>
+      <div class="float-left">
+        <small>Rentabilidade</small>
+        <h6 class="black-text font-weight-bold">{{ fund.rentabilidade }} %</h6>
+      </div>
+      <div class="float-right card-footer-v-align">
+        <a href="javascript:void(0)"> <small class="waves-light" mdbWavesEffect> + Detalhes </small> </a>
+      </div>
+    </mdb-card-footer>
+  </mdb-card>
+  <!--/.Card-->
+</div>
