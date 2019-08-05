@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.5.0 - 05/08/2019
+
+* Feature: Padronização de comunicação com API's utilizando json
+* Feature: Adicionado serviço "In memory data" de Funds (fundos)
+
 ## 0.4.0 - 05/08/2019
 
 * Feature: Serviço fund
